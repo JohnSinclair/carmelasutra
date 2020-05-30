@@ -18,7 +18,7 @@ import django_heroku
 
 
 BASE_DIR = Path(__file__).ancestor(3)
-django_heroku.settings(BASE_DIR)
+django_heroku.settings(BASE_DIR.join('CarmelaSutra'))
 
 root = environ.Path(__file__) - 3
 
