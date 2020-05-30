@@ -1,1 +1,1 @@
-web: gunicorn CarmelaSutra.wsgi
+web: gunicorn application
