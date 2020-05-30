@@ -48,6 +48,7 @@ INSTALLED_APPS = [
     'rules',
     'uploads',
     'import_export',
+    'gunicorn',
 
  
 ]
