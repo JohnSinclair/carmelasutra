@@ -91,7 +91,7 @@ MIDDLEWARE = (
     # 'django_cas_ng.middleware.CASMiddleware',
 )
 
-ROOT_URLCONF = 'CarmelaSutra.urls'
+ROOT_URLCONF = 'CarmelaSutra.CarmelaSutra.urls'
 
 TEMPLATES = [
     {
