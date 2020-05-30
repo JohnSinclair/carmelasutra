@@ -15,9 +15,10 @@ from unipath import Path
 import environ
 import django_heroku
 
-django_heroku.settings(locals())
+
 
 BASE_DIR = Path(__file__).ancestor(3)
+django_heroku.settings(BASE_DIR)
 
 root = environ.Path(__file__) - 3
 
