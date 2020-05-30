@@ -1,0 +1,58 @@
+{% extends "base.html" %}
+{% load static humanize %}
+
+{% block content %}
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<div class= "container-fluid">
+    <div class="row">
+    <div class="col-12">
+        <div class="container-fluid">
+            <div class="row">
+                    <div class="col-xs-1">
+                    <div class="card cv-card-main">
+                    <img class="cv cv-image card-img-top" src="{{cv.image.url}}" alt="{{cv.image.name}}">
+                    <div class="card-title">
+                        <p class="card-title"><b>Contact:</b></p>
+                        <p class="">kirstencarmela@gmail.com</p>
+                        <p class="">484-824-0298</p>
+                    </div>
+                    </div>
+                    </div>
+                    
+                <div class="col-lg-5 cv-wrapper">
+                  <div class="card cv-card-bio ">
+                    <div class="card-body ">
+                        <p class="card-title"><b>Biography</b></p>
+                        <p class="card-text bio-font">{{cv.bio|linebreaks}}</p>
+                    </div>
+                </div>
+                </div>
+                <div class="col-xs-2 cv-wrapper">
+                    <div class="card cv-card-works" >
+                        <div class="card-body works">
+                            <p class="card-title"><b>Published Works</b></p>
+                            <p class="card-text ">{{cv.works|linebreaks}}</p>
+                            <p class="card-title"><b>Education</b></p>
+                            <p class="card-text">{{cv.education|linebreaks}}</p>
+                            <p class="card-title"><b>Experience</b></p>
+                            <p class="card-text">{{cv.experience|linebreaks}}</p>
+                        </div>
+                    </div>
+                  </div>
+                
+            </div>
+        </div>
+    </div>
+    </div>
+</div>
+
+
+
+{% endblock %}
+

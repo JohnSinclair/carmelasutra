@@ -1,0 +1,43 @@
+{% extends "base.html" %}
+{% load static humanize %}
+{% block content %}
+
+<div class= "container-fluid homepage">
+    <div class="row">
+    <div class="col-8">
+        <div id="image-div" class="container-fluid ">
+            {% for collection in collections%}
+            <div  class="row">
+                    <div class="col-sm ">
+                        <div class="img-link-container">
+                            <a class="collection-img" href="{% url 'uploads:view-pic-collection' pk=collection.pk %}"><img class="images img-link-image" src="{{collection.preview_image.upload.url}}" alt="{{collection.preview_image.name}}" ></a>
+                            <div class="img-link-middle">{{collection.name}}</div>
+                            </div>
+                    </div>
+                    <div class="col-sm ">
+                    </div>
+            </div>
+            {% endfor %}
+
+        </div>
+    </div>
+    <div class="col-4 links" >
+            <a href="{% url  'uploads:view-cv' %}">cv</a> | 
+            <div class="dropdown show dropdown-links">
+                <a href="#" role="button" id="audio-dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  audio
+                </a>
+                <div class="dropdown-menu" aria-labelledby="audio-dropdown">
+                    <a class="item-link" href="https://beegeekeekee.bandcamp.com/" target="_blank">bandcamp</a>
+                    <a class="item-link" href="https://soundcloud.com/bgkiki" target="_blank">soundcloud</a>
+                </div>
+            </div> |
+            <a href="https://www.instagram.com/_tambourinedream/" target="_blank">instagram</a> 
+    </div>
+</div>
+</div>
+
+
+
+{% endblock %}
+
