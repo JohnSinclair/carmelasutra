@@ -15,7 +15,7 @@ from unipath import Path
 import environ
 import django_heroku
 
-django_heroku.settings(locals())
+
 
 BASE_DIR = Path(__file__).ancestor(3)
 
@@ -165,3 +165,4 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/1.11/howto/static-files/
 
 STATIC_URL = '/static/'
+django_heroku.settings(locals())
