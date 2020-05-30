@@ -46,7 +46,7 @@ INSTALLED_APPS = [
     'django.contrib.humanize',
     'home',
     'rules',
-    'CarmelaSutra.uploads',
+    'uploads',
     'import_export',
 
  
