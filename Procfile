@@ -1,3 +1,3 @@
 release: python CarmelaSutra/manage.py migrate
 release: python CarmelaSutra/manage.py makemigrations
-web: gunicorn --settings=CarmelaSutra.CarmelaSutra.settings
+web: gunicorn CarmelaSutra.wsgi 
