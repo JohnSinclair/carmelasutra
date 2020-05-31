@@ -1,3 +1,3 @@
-release: python CarmelaSutra/manage.py migrate
-release: python CarmelaSutra/manage.py makemigrations
-web: gunicorn --chdir CarmelaSutra/CarmelaSutra wsgi:CarmelaSutra
+release: python manage.py migrate
+release: python manage.py makemigrations
+web: gunicorn wsgi:CarmelaSutra
