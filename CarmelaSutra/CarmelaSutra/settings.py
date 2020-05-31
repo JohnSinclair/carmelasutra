@@ -29,7 +29,7 @@ root = environ.Path(__file__) - 3
 SECRET_KEY = 'p%$=y4(*5o#&ma!_c^nrvs8j^miv!$klhfn$tni#ip)_(fd73!'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['127.0.0.1']
 
@@ -73,8 +73,12 @@ APPEND_SLASH = True
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'static'),    
 ]
-STATIC_URL = '/static/'
+
+STATIC_HOST = 'https://crystalline-cheetah-t0ubmh9no8rnkmsvqqgeo1kg.herokudns.com' if not DEBUG else ''
+
+STATIC_URL = STATIC_HOST+'/static/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+MEDIA_HOST = 'https://crystalline-cheetah-t0ubmh9no8rnkmsvqqgeo1kg.herokudns.com' if not DEBUG else ''
 MEDIA_URL = '/media/'
 
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
