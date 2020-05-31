@@ -10,7 +10,7 @@
             <div  class="row">
                     <div class="col-sm ">
                         <div class="img-link-container">
-                            <a class="collection-img" href="{% url 'uploads:view-pic-collection' pk=collection.pk %}"><img class="images img-link-image" src="/media/{{collection.preview_image.upload.url}}" alt="{{collection.preview_image.name}}" ></a>
+                            <a class="collection-img" href="{% url 'uploads:view-pic-collection' pk=collection.pk %}"><img class="images img-link-image" src="{{collection.preview_image.upload.url}}" alt="{{collection.preview_image.name}}" ></a>
                             <div class="img-link-middle">{{collection.name}}</div>
                             </div>
                     </div>
