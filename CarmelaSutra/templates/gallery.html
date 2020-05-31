@@ -14,7 +14,7 @@
             <div class="gallery-cover-container" id="gallery">
                 {% for image in collection.pictures.all %}
                     <a class="gallery-cover-item " href="{{image.upload.url}}" target="_blank" data-size="1600x1067">
-                        <img alt="picture" src="{{image.upload.url}}"
+                        <img alt="picture" src="/media/{{image.upload.url}}"
                             class="img-fluid">
                     </a>
                 {% endfor %}

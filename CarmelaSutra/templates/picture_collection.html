@@ -13,7 +13,7 @@
                 {% for image in collection.pictures.all %}
                 <div class="mb-3 pics animation all 2">
                     <a href="{% url 'uploads:view-gallery' pk=collection.pk %}" target="_blank" data-size="1600x1067">
-                        <img alt="picture" src="{{image.upload.url}}"
+                        <img alt="picture" src="/media/{{image.upload.url}}"
                             class="img-fluid">
                     </a>
                 </div>
