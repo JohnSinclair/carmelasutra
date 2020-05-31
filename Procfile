@@ -1,3 +1,3 @@
-release: python manage.py migrate
-release: python manage.py makemigrations
-web: gunicorn wsgi:application
+release: python CarmelaSutra/manage.py migrate
+release: python CarmelaSutra/manage.py makemigrations
+web: gunicorn CarmelaSutra.wsgi:application
