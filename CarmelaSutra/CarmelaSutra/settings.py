@@ -79,7 +79,7 @@ STATIC_HOST = 'https://crystalline-cheetah-t0ubmh9no8rnkmsvqqgeo1kg.herokudns.co
 STATIC_URL = STATIC_HOST+'/static/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
-MEDIA_URL = 'media/'
+MEDIA_URL = '/media/'
 
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
