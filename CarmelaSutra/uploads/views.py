@@ -3,7 +3,7 @@ from django.shortcuts import render, redirect
 from django.db.models import Count, Min, Sum, Avg
 from django.db.models import Q
 from django.contrib.auth.decorators import login_required
-from CarmelaSutra.uploads.models import Picture, PictureCollection, CourseOfLife
+from uploads.models import Picture, PictureCollection, CourseOfLife
 
 
 def view_pic_collection(request, pk):
