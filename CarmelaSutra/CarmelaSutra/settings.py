@@ -44,9 +44,9 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'django.contrib.humanize',
-    'home',
+    'CarmelaSutra.home',
     'rules',
-    'uploads',
+    'CarmelaSutra.uploads',
     'import_export',
     'gunicorn',
 
