@@ -74,9 +74,8 @@ STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'static'),    
 ]
 
-STATIC_HOST = 'https://crystalline-cheetah-t0ubmh9no8rnkmsvqqgeo1kg.herokudns.com' if not DEBUG else ''
 
-STATIC_URL = STATIC_HOST+'/static/'
+STATIC_URL = '/static/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 MEDIA_URL = '/media/'
