@@ -74,11 +74,7 @@ STATICFILES_DIRS = [
 ]
 
 
-<<<<<<< HEAD
-
-=======
 STATIC_URL = '/static/'
->>>>>>> 724f1d5c62f9605cd38fd91eccc986bd8629a57b
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 MEDIA_URL = '/media/'
