@@ -117,7 +117,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'CarmelaSutra.wsgi.application'
+# WSGI_APPLICATION = 'CarmelaSutra.wsgi.application'
 LOGIN_REDIRECT_URL = '/'
 
 LOGIN_URL = '/account/login/'
@@ -171,4 +171,4 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/1.11/howto/static-files/
 
 STATIC_URL = '/static/'
-django_heroku.settings(locals())
+# django_heroku.settings(locals())
