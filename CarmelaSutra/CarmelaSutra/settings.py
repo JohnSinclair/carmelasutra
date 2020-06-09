@@ -31,7 +31,7 @@ SECRET_KEY = 'p%$=y4(*5o#&ma!_c^nrvs8j^miv!$klhfn$tni#ip)_(fd73!'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1']
+ALLOWED_HOSTS = ['www.kirstenbecker.club']
 
 
 # Application definition
