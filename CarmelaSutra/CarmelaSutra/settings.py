@@ -13,7 +13,6 @@ https://docs.djangoproject.com/en/1.11/ref/settings/
 import os
 from unipath import Path
 import environ
-import django_heroku
 
 
 
