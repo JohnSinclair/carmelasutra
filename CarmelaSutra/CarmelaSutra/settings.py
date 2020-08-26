@@ -28,7 +28,7 @@ root = environ.Path(__file__) - 3
 SECRET_KEY = 'p%$=y4(*5o#&ma!_c^nrvs8j^miv!$klhfn$tni#ip)_(fd73!'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['www.kirstenbecker.club']
 
@@ -168,6 +168,12 @@ USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.11/howto/static-files/
+
+STATIC_ROOT = '/var/webapps/carmelasutra_static/'
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, 'static'),    
+]
+
 
 STATIC_URL = '/static/'
 # django_heroku.settings(locals())
