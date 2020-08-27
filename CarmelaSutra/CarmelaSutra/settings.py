@@ -19,7 +19,7 @@ import environ
 BASE_DIR = Path(__file__).ancestor(3)
 
 root = environ.Path(__file__) - 3
-
+print(BASE_DIR)
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/1.11/howto/deployment/checklist/
@@ -67,13 +67,7 @@ APPEND_SLASH = True
 
 # STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 
-# STATI
-STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, 'static'),    
-]
 
-
-STATIC_URL = '/static/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 MEDIA_URL = '/media/'
@@ -177,3 +171,4 @@ STATICFILES_DIRS = [
 
 STATIC_URL = '/static/'
 # django_heroku.settings(locals())
+print(STATICFILES_DIRS)
