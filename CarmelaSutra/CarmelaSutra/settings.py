@@ -29,8 +29,8 @@ SECRET_KEY = 'p%$=y4(*5o#&ma!_c^nrvs8j^miv!$klhfn$tni#ip)_(fd73!'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
-
-ALLOWED_HOSTS = ['www.kirstenbecker.club']
+ALLOWED_HOSTS = ['www.kirstenbecker.club', 'kirstenbecker.club', 'kirstenbecker.club.kirstenbecker.club']
+# ALLOWED_HOSTS = ['www.kirstenbecker.club']
 
 
 # Application definition
